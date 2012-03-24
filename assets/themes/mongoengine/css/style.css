@@ -1,0 +1,313 @@
+/* @license
+ * MyFonts Webfont Build ID 2162246, 2012-03-23T07:50:06-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Museo Sans 500 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/500/
+ * Copyright: Copyright (c) 2008 by Jos Buivenga. All rights reserved.
+ * Licensed pageviews: unlimited
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2162246
+ *
+ * © 2012 Bitstream Inc
+*/
+ @font-face {font-family: 'MuseoSans';src: url('../fonts/20FE46_0_0.eot');src: url('../fonts/20FE46_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/20FE46_0_0.woff') format('woff'),url('../fonts/20FE46_0_0.ttf') format('truetype');}
+
+
+/* Override some defaults */
+html, body {
+  background-color: #eee;
+}
+
+
+body {
+  font-family: "MuseoSans", "Helvetica", "Arial", "sans-serif";
+  background-color: #fff;
+  font-size: 100%;  /* Fix IE exaggerated resizing */
+  font-size: 1.0em;   /* Should give 16px */
+  line-height: 1.0em;
+}
+
+p {
+  font-family: "MuseoSans", "Helvetica", "Arial", "sans-serif";
+  font-size: 16px;   /* Should give 16px */
+}
+
+.page-header {
+  margin: -20px -20px 0px 0px;
+  padding: 0;
+  border: none;
+}
+
+h1.logo {
+  background: url('../images/logo.png') 0 22px no-repeat;
+  text-indent: -99999px;
+  width: 371px;
+  height: 120px;
+}
+
+h2 {
+    font-size: 1.875em;
+    color: #454545;
+    margin-top: 0.2em;
+    margin-bottom: 0.6em;
+}
+
+h3 {
+    margin-top: 0.2em;
+    font-size: 1.4em;
+    margin-bottom: 0.6em;
+}
+
+/* nav bar ================ */
+.navbar {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.navbar-inner {
+  background-color: #f7f7f7;
+  background-image: -moz-linear-gradient(top, #f7f7f7, #f7f7f7);
+  background-image: -ms-linear-gradient(top, #f7f7f7, #f7f7f7);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#f7f7f7));
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #f7f7f7);
+  background-image: -o-linear-gradient(top, #f7f7f7, #f7f7f7);
+  background-image: linear-gradient(top, #f7f7f7, #f7f7f7);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#f7f7f7', GradientType=0);
+  text-transform: uppercase;
+}
+
+.navbar ul {
+  font-size: 1.0em;
+  margin: 0;
+}
+
+.navbar .nav > li > a {
+  color: #777;
+  letter-spacing: -0.05em;
+  line-height: 1.8em;
+  display: block;
+  float: left;
+  padding: 2px 20px 0 20px;
+  border-right: 1px solid #e4e4e4;
+  white-space: nowrap; /* required in IE6 */
+  text-shadow: none;
+}
+
+.navbar .nav > li.first > a {
+  border-left: 1px solid #e4e4e4;
+}
+
+.navbar .nav > li > a:hover, .navbar .nav > li:hover {
+  background-color: #e4e4e4;
+  color: #454545;
+  text-decoration: none;
+}
+
+
+/* featured */
+.strapline {
+  background: url('../images/strapline.png') 0 0 repeat-x #4c2d05;
+  border-top: 1px solid #957e62;
+  border-bottom: 1px solid #26160b;
+  -webkit-border-radius: 10px 10px 0 0;
+     -moz-border-radius: 10px 10px 0 0;
+      border-radius: 10px 10px 0 0;
+}
+
+.strapline p {
+  font-size: 1.70em;
+  line-height: 2.25em;
+  text-align: center;
+  color: #291902;
+  text-shadow: 0 1px 1px #957e62;
+  margin: 0;
+}
+
+.featured {
+  color: #fff;
+  background: url('../images/bg-featured-top.png') 0 0 repeat-x #4c2d05;
+  padding: 20px 0;
+  border-bottom: 1px solid #26160b;
+
+  -webkit-border-radius: 0 0 10px 10px;
+     -moz-border-radius: 0 0 10px 10px;
+      border-radius: 0 0 10px 10px;
+}
+
+.featured p {
+  text-shadow: 0 1px 1px #26160b;
+  line-height: 1.4em;
+  margin-bottom: 0.875em;
+}
+
+.featured #about p {
+  text-align: center;
+}
+
+.featured p a {
+  color: #f6f4cd;
+}
+
+.featured h3 {
+  color: #8AE6BB;
+  text-shadow: 0 1px 1px #26160B;
+}
+
+
+.container > footer {
+  margin-top: 20px;
+}
+.container > footer p {
+  text-align: center; /* center align it with the container */
+}
+
+.topbar .btn {
+  border: 0;
+}
+
+/* Features */
+
+.nav-pills > li > a, .nav-pills > li.active a, .nav-pills > .active > a:hover{
+  font-size: 1.75em;
+  background: #f6f4cd;
+  color: #3c2a13;
+  padding: 15px 20px;
+  margin-right: 5px;
+
+  text-shadow: 0 1px 1px #fff;
+
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+      border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 10px #26160b;
+     -moz-box-shadow: 0px 3px 10px #26160b;
+       -box-shadow: 0px 3px 10px #26160b;
+}
+
+.nav-pills > li > span{
+  display: none;
+}
+
+.nav-pills > li.active > span, .nav-pills > li:hover > span {
+  display: block;
+  margin-top: -2px;
+  background: url('../images/selected-arrow.png') center top no-repeat;
+  width: 100%;
+  height: 12px;
+  left: 0px;
+}
+
+.nav > li > a:hover {
+  background: #f6f4cd;
+  color: #3c2a13;
+  text-shadow: 0 2px 2px #fff;
+}
+
+
+.fade {
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -ms-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+  opacity: 0;
+}
+.fade.in {
+  opacity: 1;
+}
+
+.highlight pre {
+  background-color: transparent;
+  border: none;
+}
+
+.secondary_info {
+  margin-top: 20px;
+  padding: 2px 4px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+.secondary_info > h2 {
+  margin-left: 20px;
+}
+
+a {
+  color: #00693c;
+  outline: 0; /* prevent dotted border in Firefox */
+  -webkit-transition-property:color, background;
+  -webkit-transition-duration: 0.2s, 0.2s;
+  -webkit-transition-timing-function: linear, linear;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #00693c;
+}
+
+a:hover {
+  color: #00934e;
+  -webkit-transition-property: color, background;
+  -webkit-transition-duration: 0.1s, 0.1s;
+  -webkit-transition-timing-function: linear, linear;
+}
+
+a.download {
+    font-size: 1.4em;
+    border: 3px solid #00693c;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    padding: 2px 6px;
+    line-height: 2.0em;
+    margin-right: 6px;
+}
+
+a.download:hover {
+  text-decoration: none;
+}
+
+/* twitter / github ================================================== */
+
+.secondary_info > .twtr-reply, .secondary_info > {
+  display: none;
+}
+
+#twtr-widget-1 h3 {
+  margin-top: 0.2em;
+  font-size: 22px !important;
+  margin-bottom: 0.6em;
+}
+
+#github-commits {
+  margin-left: 20px;
+}
+
+.commit-avatar {
+  width: 40px;
+  height: 40px;
+  float: left;
+  overflow: hidden;
+  display: block;
+}
+
+.commit-img {
+  height: 25px;
+  width: 25px;
+}
+
+.commit-text {
+  padding-left: 40px;
+}
