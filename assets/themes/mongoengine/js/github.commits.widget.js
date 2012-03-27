@@ -1114,17 +1114,18 @@ function bit_rol(num, cnt)
                     if (differenceInDays == 0) {
                         var differenceInHours = Math.floor(((todayTime - commitTime)/(3600*1000)));
                         if (differenceInHours == 0) {
-                            var differenceInMinutes = Math.floor(((todayTime - commitTime)/(600*1000)));
+                            var differenceInMinutes = Math.floor(((todayTime - commitTime)/(60*1000)));
                             if (differenceInMinutes == 0) {
-
                                 return 'just now';
                             }
-
-                            return 'about ' + differenceInMinutes + ' minutes ago';
+                            console.log(todayTime, commitTime, (todayTime - commitTime))
+                            var plural = differenceInMinutes > 1 ? 's' : ''
+                            return 'about ' + differenceInMinutes + ' minute' + plural + ' ago';
                         }
 
-                        return 'about ' + differenceInHours + ' hours ago';
-                    }else if (differenceInDays == 1) {
+                        var plural = differenceInHours > 1 ? 's' : ''
+                        return 'about ' + differenceInHours + ' hour' + plural + ' ago';
+                    } else if (differenceInDays == 1) {
                         return 'yesterday';
                     }
                     return differenceInDays + ' days ago';
