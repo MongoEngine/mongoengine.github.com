@@ -119,7 +119,6 @@ h3.first {
 /* featured */
 .strapline {
   background: url('../images/strapline.png') 0 0 repeat-x #4c2d05;
-  border-top: 1px solid #957e62;
   border-bottom: 1px solid #26160b;
   -webkit-border-radius: 10px 10px 0 0;
      -moz-border-radius: 10px 10px 0 0;
