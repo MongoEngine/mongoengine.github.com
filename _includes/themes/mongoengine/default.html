@@ -59,7 +59,8 @@
     <script>
         $(function () {
             $('#github-commits').githubInfoWidget(
-          { user: 'mongoengine', repo: 'mongoengine', branch: 'master', last: 5 });
+          { user: 'mongoengine', repo: 'mongoengine', branch: 'master',
+            last: 5, avatarSize: 25});
         });
     </script>
     {% include JB/analytics %}
