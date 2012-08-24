@@ -51,10 +51,42 @@ class WikiPage(Document):                           # adding field objects as
 {% endhighlight %}
       </div>
       <div class="tab-pane" id="announcements">
-          <h3>v0.6.13 Released</h3>
-          <p>
-            More minor updates - see the <a href="http://mongoengine-odm.readthedocs.org/en/latest/changelog.html#changes-in-0-6-13">change log</a> for a full list of changes.
-          </p>
+          <h3>v0.7rc1 Released</h3>
+<h3>Exciting news the release candidate for v0.7 is ready!</h3>
+<p>
+Since this is a release candidate it is not being pushed to PyPi but you can install it with pip like so:
+
+<pre>
+<code>
+  pip install https://github.com/MongoEngine/mongoengine/tarball/v0.7rc1
+</code>
+</pre>
+</p>
+
+<h4>Why do an rc?</h4>
+
+<p>
+Well there have been a few changes, including some major refactoring of the meta classes so they are more readable and clear in their intent.  Python version support has been clarified - we now support python 2.5 up to python 3!  Mainly its because I don't want another 20 point release as seen in the 0.6.x series so hopefully people will be able to try 0.7 out and provide feedback.
+</p>
+<p>
+The full changelog can be seen here: http://mongoengine-odm.readthedocs.org/en/latest/changelog.html#changes-in-0-7-x
+</p>
+<p>
+No changes are intended to be backwards breaking, but one was introduced inadvertently in the 0.6 series and not declared so it gives some notice to people upgrading.  I have added numerous FutureWarnings as defaults will change in 0.8 so you will be asked to explicitly declare intent for cascading saves etc..  See <a href="http://mongoengine-odm.readthedocs.org/en/latest/upgrade.html#to-0-7">the upgrade guide</a> for the full upgrade information.
+</p>
+
+<h4>The future</h4>
+<p>
+MongoEngine support and usage is growing - thanks to all the issue reporters, commiters and helpers on github, 0.8 is looking to be another exciting release with continuing improvements in performance, as well as a clean up of the style and pep8'ness of the code base.  Hopefully, a few core improvements will make into the 0.8 branch but until I've coded them, I'll keep them under my hat!
+<p>
+<h4>Framework support</h4>
+<p>
+Before 0.8 is released I aim to continue supporting web frameworks and get <a href="https://github.com/MongoEngine/django-mongoengine">django-mongoengine</a> support nailed and out into the wild.  <a href="https://github.com/MongoEngine/flask-mongoengine">Flask-MongoEngine</a> has two new maintainers: Anthony Nemitz and Thomas Steinacher of <a href="https://github.com/elasticsales/flask-mongorest">flask-mongorest</a> fame and they are keen to drive the product forward.
+<p>
+As always any feedback let me know!
+<br>
+<a href="http://rosslawley.co.uk">Ross</a>
+</p>
           <h3>Roadmap released</h3>
           <p>
             The roadmap has been planned to get us to a 1.0 release.

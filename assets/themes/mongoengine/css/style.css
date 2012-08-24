@@ -159,7 +159,7 @@ h3.first {
   color: #f6f4cd;
 }
 
-.featured h3 {
+.featured h3, .featured h4 {
   color: #8AE6BB;
   text-shadow: 0 1px 1px #26160B;
 }
