@@ -61,6 +61,7 @@
             $('#github-commits').githubInfoWidget(
           { user: 'mongoengine', repo: 'mongoengine', branch: 'master',
             last: 5, avatarSize: 25});
+            $("a[href='"+location.hash+"']").click();
         });
     </script>
     {% include JB/analytics %}
