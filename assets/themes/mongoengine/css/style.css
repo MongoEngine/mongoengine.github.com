@@ -285,36 +285,3 @@ a.download {
 a.download:hover {
   text-decoration: none;
 }
-
-/* twitter / github ================================================== */
-
-.secondary_info > .twtr-reply, .secondary_info > {
-  display: none;
-}
-
-#twtr-widget-1 h3 {
-  margin-top: 0.2em;
-  font-size: 22px !important;
-  margin-bottom: 0.6em;
-}
-
-#github-commits {
-  margin-left: 20px;
-}
-
-.commit-avatar {
-  width: 40px;
-  height: 40px;
-  float: left;
-  overflow: hidden;
-  display: block;
-}
-
-.commit-img {
-  height: 25px;
-  width: 25px;
-}
-
-.commit-text {
-  padding-left: 40px;
-}
