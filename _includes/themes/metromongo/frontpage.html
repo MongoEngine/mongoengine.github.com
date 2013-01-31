@@ -1,7 +1,5 @@
-<div class="row-fluid">
-
-<div class="container">
-  <div class=" hidden-phone">
+<div class="hidden-phone">
+  <div class="container">
     <div id="slider" class="sl-slider-wrapper">
       <div class="sl-slider">
         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
@@ -52,10 +50,11 @@ class WikiPage(Document):                          # adding field objects as
         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
           <div class="sl-slide-inner bg-3">
             <div class="bg-img bg-img-3"></div>
-            <h2>Support</h2>
+            <h3>Framework Support</h3>
             <blockquote>
-              <p>Flask</p>
-              <p>Django</p> Coming soon...
+              <p><a href="https://github.com/MongoEngine/flask-mongoengine"><img src="{{ ASSET_PATH }}/metromongo/images/flask-logo.png"></a></p>
+              <h3>Coming Soon...</h3>
+              <p><a href="https://github.com/MongoEngine/django-mongoengine"><img src="{{ ASSET_PATH }}/metromongo/images/django-logo.png"></a></p>
             </blockquote>
           </div>
         </div>
@@ -91,7 +90,7 @@ class WikiPage(Document):                          # adding field objects as
 
       <nav id="nav-dots" class="nav-dots">
         <a href="#home"><span class="nav-dot-current"></span></a>
-        <a href="#getting-started"><span></span></a>
+        <a href="#simple"><span></span></a>
         <a href="#frameworks"><span></span></a>
         <a href="#tutorial"><span></span></a>
         <a href="#help-wanted"><span></span></a>
@@ -101,10 +100,10 @@ class WikiPage(Document):                          # adding field objects as
 </div>
 
 <div class="row-fluid">
-  <div class="container secondary">
-    <div class="span12">
+<div class="container">
+  <div class="span12 secondary">
     <div class="span6">
-      <h2 class="bg-img-2"><a name="getting-started"></a>Getting Started</h2>
+      <h2 class="bg-img-2"><span class="icon icon-wrench"></span><a name="getting-started"></a>Getting Started</h2>
       <div class="sans">
         <p>To install MongoEngine, simply run:</p>
         <p><code>pip install mongoengine</code></p>
@@ -120,7 +119,28 @@ class WikiPage(Document):                          # adding field objects as
         </p>
       </div>
     </div>
-    <div id="github" class="span6"></div>
+    <div id="github" class="span6">
+      <h2 id="ghw-logo" class="bg-img-3"><span class="icon icon-github"></span>Github</h2>
+      <div id="ghw-repos">
+        <div id="ghw-github-loader"></div>
+        <ul></ul>
+      </div>
     </div>
   </div>
+</div>
+</div>
+
+<div class="row-fluid">
+<div class="container">
+  <div class="span12 secondary">
+      <h2 class="bg-img-1">mongoengine</h2>
+      <div class="sans">
+      <h3>Contributing</h3>
+      <p>
+        To contribute to the project, fork it on GitHub and send a pull request,
+        all contributions and suggestions are welcome!
+      </p>
+      </div>
+  </div>
+</div>
 </div>

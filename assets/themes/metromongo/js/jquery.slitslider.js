@@ -132,7 +132,6 @@
         },
         // gets the current container width & height
         _getSize : function() {
-
             this.size = {
                 width : this.$elWrapper.outerWidth( true ),
                 height : this.$elWrapper.outerHeight( true )
