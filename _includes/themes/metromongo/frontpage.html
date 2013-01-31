@@ -1,0 +1,126 @@
+<div class="row-fluid">
+
+<div class="container">
+  <div class=" hidden-phone">
+    <div id="slider" class="sl-slider-wrapper">
+      <div class="sl-slider">
+        <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+          <div class="sl-slide-inner bg-1">
+            <div class="bg-img bg-img-1"></div>
+            <h2><span>mongo</span>engine</h2>
+            <blockquote id="documentation">
+              <p>
+              MongoEngine is a Document-Object Mapper (think ORM, but for document databases)
+              for working with MongoDB from Python.
+              </p>
+              <p>It uses a simple declarative API, similar to the Django ORM.</p>
+              <p>
+              Documentation available at
+              <a href="http://bit.ly/mongoengine-docs">http://bit.ly/mongoengine-docs</a>
+              - there is currently a <a href="http://readthedocs.org/docs/mongoengine-odm/en/latest/tutorial.html">tutorial</a>, a <a href="http://readthedocs.org/docs/mongoengine-odm/en/latest/guide/index.html">user guide</a> and
+              <a href="http://readthedocs.org/docs/mongoengine-odm/en/latest/apireference.html">API reference</a>.
+            </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+          <div class="sl-slide-inner bg-2">
+            <div class="bg-img bg-img-2"></div>
+            <h3>Simple to use</h3>
+            <blockquote>
+{% highlight python %}
+from mongoengine import *                           # To define a schema for a
+                                                    # document, we create a
+class Metadata(EmbeddedDocument):                  # class that inherits from
+    tags = ListField(StringField())                 # Document.
+    revisions = ListField(IntField())
+                                                    # Fields are specified by
+class WikiPage(Document):                          # adding field objects as
+    title = StringField(required=True)              # class attributes to the
+    text = StringField()                            # document class.
+    metadata = EmbeddedDocumentField(Metadata)
+                                                    # Querying is achieved by
+>>> page.title = "Hello, World!"                    # calling the objects
+>>> for page in WikiPage.objects:                   # attribute on a document
+>>>     print page.title                            # class.
+{% endhighlight %}
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner bg-3">
+            <div class="bg-img bg-img-3"></div>
+            <h2>Support</h2>
+            <blockquote>
+              <p>Flask</p>
+              <p>Django</p> Coming soon...
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner bg-4">
+            <div class="bg-img bg-img-4"></div>
+            <h3>Tutorial</h3>
+            <blockquote><p>
+              <a href="http://docs.mongodb.org/manual/tutorial/write-a-tumblelog-application-with-flask-mongoengine/">
+                Build a tumblelog with Flask</a>
+              </p>
+              <p>
+              <a href="http://docs.mongodb.org/manual/tutorial/write-a-tumblelog-application-with-flask-mongoengine/">
+              <img src="{{ ASSET_PATH }}/metromongo/images/tumblelog.png"></a>
+              </p></blockquote>
+          </div>
+        </div>
+
+        <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner bg-5">
+            <div class="bg-img bg-img-5"></div>
+            <h3>Help wanted</h3>
+            <blockquote>
+              <p>We're always looking for help on <em>any aspect</em> of mongoengine.<p>
+                <img src="{{ ASSET_PATH }}/metromongo/images/helpwanted.jpg">
+              <p>
+                Get in touch on the <a href="http://groups.google.com/group/mongoengine-users">user group</a>.
+              </p></blockquote>
+          </div>
+        </div>
+    </div><!-- /sl-slider -->
+
+      <nav id="nav-dots" class="nav-dots">
+        <a href="#home"><span class="nav-dot-current"></span></a>
+        <a href="#getting-started"><span></span></a>
+        <a href="#frameworks"><span></span></a>
+        <a href="#tutorial"><span></span></a>
+        <a href="#help-wanted"><span></span></a>
+      </nav>
+    </div><!-- /slider-wrapper -->
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="container secondary">
+    <div class="span12">
+    <div class="span6">
+      <h2 class="bg-img-2"><a name="getting-started"></a>Getting Started</h2>
+      <div class="sans">
+        <p>To install MongoEngine, simply run:</p>
+        <p><code>pip install mongoengine</code></p>
+        <p>Downloads are also available as .zip/.tar.gz
+           archives for the stable and master versions.</p>
+        <p>To get to grips with MongoEngine, there is extensive
+          <a href="http://bit.ly/mongoengine-docs">documentation</a>,
+          <a href="http://readthedocs.org/docs/mongoengine-odm/en/latest/apireference.html">API references</a>
+          and a <a href="http://readthedocs.org/docs/mongoengine-odm/en/latest/tutorial.html">tutorial</a>.
+
+          You can find help by joining the <a href="http://groups.google.com/group/mongoengine-users">MongoEngine
+          Users mailing list</a> or by chatting with other users on the <a href="irc://irc.freenode.net/mongoengine">#mongoengine IRC channel.</a>
+        </p>
+      </div>
+    </div>
+    <div id="github" class="span6"></div>
+    </div>
+  </div>
+</div>

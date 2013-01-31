@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/m-styles.min.css" rel="stylesheet">
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+    <link href="{{ ASSET_PATH }}/css/mongoengine.css" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ ASSET_PATH }}/css/pygments.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/modernizr.custom.js"></script>
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/no-js.css" />
+    </noscript>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="{{ ASSET_PATH }}/images/favicon.ico">
+  <!-- Update these with your own images
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+    <div class="row header">
+      <nav class="navbar navbar-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar btntop" data-toggle="collapse" data-target=".nav-collapse">NAVIGATION</a>
+          <h1 class="brand hidden-phone hidden-tablet">
+              <a href="http://mongoengine.org">
+                  <img src="{{ ASSET_PATH }}/images/logo.png" alt="">
+              </a>
+          </h1>
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li><a href="/" class="first">Home</a></li>
+              <li><a href="#getting-started">Getting Started</a></li>
+              <li><a href="http://bit.ly/mongoengine-docs">Documentation</a></li>
+              <li><a href="#source">Source</a></li>
+              <li><a href="#community">Community</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ content }}
+
+    <!-- Javascripts -->
+    <script src="{{ ASSET_PATH }}/js/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/jquery.ba-cond.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/jquery.slitslider.js"></script>
+    <script src="{{ ASSET_PATH }}/js/jquery.github.min.js"></script>
+    <script>
+       $(function() {
+        var Page = (function() {
+          var $nav = $( '#nav-dots > a > span' ),
+            slitslider = $( '#slider' ).slitslider( {
+              autoplay: true,
+              onBeforeChange : function( slide, pos ) {
+                $nav.removeClass( 'nav-dot-current' );
+                $nav.eq( pos ).addClass( 'nav-dot-current' );
+              }
+            } ),
+            init = function() {
+              initEvents();
+            },
+            initEvents = function() {
+              $nav.each( function( i ) {
+                var span = $( this );
+                span.on( 'click', function(event){
+                  if( !slitslider.isActive() ) {
+                    $nav.removeClass( 'nav-dot-current' );
+                    span.addClass( 'nav-dot-current' );
+                  }
+                  slitslider.jump( i + 1 );
+                });
+                if (span.parent()[0].href == window.location) {
+                  span.trigger('click');
+                }
+              } );
+            };
+            return { init : init };
+        })();
+        Page.init();
+        $("#github").github();
+    });
+  </script>
+
+
+    {% include JB/analytics %}
+  </body>
+</html>
