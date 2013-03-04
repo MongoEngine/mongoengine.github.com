@@ -477,7 +477,7 @@ footer p { padding: 50px;}
   padding-right: 10px;
 }
 
-.sans, .sans p {font-family: "Open Sans", Helvetica, Arial, sans-serif; line-height: 1.4em; margin: 0px 10px;}
+.sans, .sans p {font-family: "Open Sans", Helvetica, Arial, sans-serif; line-height: 1.4em; margin: 0px 0px 10px 10px;}
 /* Github */
 .ghw-clear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
 html[xmlns] .ghw-clear { display: block;}
@@ -490,6 +490,7 @@ html[xmlns] .ghw-clear { display: block;}
 
 #github #ghw-repos {
   background: #fff;
+  min-height: 270px;
 }
 #github #ghw-repos #ghw-github-loader {
   width: 100%;
@@ -604,4 +605,4 @@ html[xmlns] .ghw-clear { display: block;}
   border-bottom: 0px;
 }
 
-.secondary:last-of-type { margin-bottom: 60px;};
+.last { margin-bottom: 60px;};
