@@ -14,6 +14,7 @@
 
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/m-styles.min.css" rel="stylesheet">
 
@@ -24,9 +25,6 @@
     <link href="{{ ASSET_PATH }}/css/mongoengine.css" rel="stylesheet" type="text/css" media="all">
     <link href="{{ ASSET_PATH }}/css/pygments.css" rel="stylesheet" type="text/css" media="all">
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/modernizr.custom.js"></script>
-    <noscript>
-      <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/no-js.css" />
-    </noscript>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
     <!-- Le fav and touch icons -->
@@ -39,25 +37,13 @@
   </head>
 
   <body>
-    <div class="row header">
-      <nav class="navbar navbar-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <h1 class="brand hidden-phone hidden-tablet">
-              <a href="http://mongoengine.org">
-                  <img src="{{ ASSET_PATH }}/images/logo.png" alt="">
-              </a>
-          </h1>
-          <div class="nav-collapse hidden-desktop">
-            <ul class="nav pull-right">
-              <li><a href="/" class="first">Home</a></li>
-              <li><a href="#getting-started">Getting Started</a></li>
-              <li><a href="http://bit.ly/mongoengine-docs">Documentation</a></li>
-              <li><a href="#contribute">Source</a></li>
-              <li><a href="#community">Community</a></li>
-            </ul>
-          </div>
-        </div>
+    <div class="row-fluid header">
+      <div class="container">
+        <h1 class="brand">
+            <a href="http://mongoengine.org">
+                <img src="{{ ASSET_PATH }}/images/logo.png" alt="">
+            </a>
+        </h1>
       </div>
     </div>
 

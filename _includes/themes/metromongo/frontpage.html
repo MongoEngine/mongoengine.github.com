@@ -1,10 +1,9 @@
-<div class="hidden-phone">
+<div class="row-fluid">
   <div class="container">
-    <div id="slider" class="sl-slider-wrapper">
+    <div id="slider" class="sl-slider-wrapper hidden-phone">
       <div class="sl-slider">
         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
           <div class="sl-slide-inner bg-1">
-            <div class="bg-img bg-img-1"></div>
             <h2><span>mongo</span>engine</h2>
             <blockquote id="documentation">
               <p>
@@ -24,7 +23,6 @@
 
         <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
           <div class="sl-slide-inner bg-2">
-            <div class="bg-img bg-img-2"></div>
             <h3>Simple to use</h3>
             <blockquote>
 {% highlight python %}
@@ -49,7 +47,6 @@ class WikiPage(Document):                          # adding field objects as
 
         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
           <div class="sl-slide-inner bg-3">
-            <div class="bg-img bg-img-3"></div>
             <h3>Framework Support</h3>
             <blockquote>
               <p><a href="https://github.com/MongoEngine/flask-mongoengine"><img src="{{ ASSET_PATH }}/metromongo/images/flask-logo.png"></a></p>
@@ -61,7 +58,6 @@ class WikiPage(Document):                          # adding field objects as
 
         <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
           <div class="sl-slide-inner bg-4">
-            <div class="bg-img bg-img-4"></div>
             <h3>Tutorial</h3>
             <blockquote><p>
               <a href="http://docs.mongodb.org/manual/tutorial/write-a-tumblelog-application-with-flask-mongoengine/">
@@ -76,14 +72,16 @@ class WikiPage(Document):                          # adding field objects as
 
         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
           <div class="sl-slide-inner bg-5">
-            <div class="bg-img bg-img-5"></div>
             <h3>Help wanted</h3>
             <blockquote>
-              <p>We're always looking for help on <em>any aspect</em> of mongoengine.<p>
-                <img src="{{ ASSET_PATH }}/metromongo/images/helpwanted.jpg">
+              <p>We're always looking for help on <em>any aspect</em> of mongoengine.</p>
+                <a href="#contribute">
+                  <img src="{{ ASSET_PATH }}/metromongo/images/helpwanted.jpg">
+                </a>
               <p>
-                Get in touch on the <a href="http://groups.google.com/group/mongoengine-users">user group</a>.
+                Please get in touch on the <a href="http://groups.google.com/group/mongoengine-users">user group</a>.
               </p></blockquote>
+            </a>
           </div>
         </div>
     </div><!-- /sl-slider -->
@@ -96,14 +94,36 @@ class WikiPage(Document):                          # adding field objects as
         <a href="#help-wanted"><span></span></a>
       </nav>
     </div><!-- /slider-wrapper -->
+    <div class="row-fluid visible-phone">
+      <div class="span12 secondary">
+        <h2 class="bg-1"><span>mongo</span>engine</h2>
+
+          <div class="sans">
+            <p>
+            MongoEngine is a Document-Object Mapper (think ORM, but for document databases)
+            for working with MongoDB from Python.
+            </p>
+            <p>It uses a simple declarative API, similar to the Django ORM.</p>
+            <p>
+            Documentation available at
+            <a href="http://bit.ly/mongoengine-docs">http://bit.ly/mongoengine-docs</a>
+            - there is currently a <a href="http://readthedocs.org/docs/mongoengine-odm/en/latest/tutorial.html">tutorial</a>, a <a href="http://readthedocs.org/docs/mongoengine-odm/en/latest/guide/index.html">user guide</a> and
+            <a href="http://readthedocs.org/docs/mongoengine-odm/en/latest/apireference.html">API reference</a>.
+            </p>
+          </div>
+        </div>
+      </div>
   </div>
+</div>
+
+
 </div>
 
 <div class="row-fluid">
 <div class="container">
   <div class="span12 secondary">
     <div class="span6">
-      <h2 class="bg-img-2"><span class="icon icon-wrench"></span><a name="getting-started"></a>Getting Started</h2>
+      <h2 class="bg-2"><span class="icon icon-wrench"></span><a name="getting-started"></a>Getting Started</h2>
       <div class="sans">
         <p>To install MongoEngine, simply run:</p>
         <p><code>pip install mongoengine</code></p>
@@ -120,7 +140,7 @@ class WikiPage(Document):                          # adding field objects as
       </div>
     </div>
     <div id="github" class="span6">
-      <h2 id="ghw-logo" class="bg-img-3"><span class="icon icon-github"></span>Github</h2>
+      <h2 id="ghw-logo" class="bg-3"><span class="icon icon-github"></span>Code</h2>
       <div id="ghw-repos">
         <div id="ghw-github-loader"></div>
         <ul></ul>
@@ -133,7 +153,7 @@ class WikiPage(Document):                          # adding field objects as
 <div class="row-fluid">
 <div class="container">
   <div class="span12 secondary last">
-      <h2 class="bg-img-4"><span class="icon icon-leaf"></span>mongoengine</h2>
+      <h2 class="bg-4"><span class="icon icon-leaf"></span>mongoengine</h2>
       <div class="sans">
         <h3 id="community">Community</h3>
         You can find help by joining the <a href="http://groups.google.com/group/mongoengine-users">MongoEngine Users mailing list</a> or by chatting with other users on the <a href="irc://irc.freenode.net/mongoengine">#mongoengine IRC channel.</a>

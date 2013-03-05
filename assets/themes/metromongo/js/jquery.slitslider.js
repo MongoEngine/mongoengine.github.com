@@ -132,11 +132,12 @@
         },
         // gets the current container width & height
         _getSize : function() {
+            var w = this.$elWrapper.outerWidth( true ),
+                bw = $('body').width();
             this.size = {
-                width : this.$elWrapper.outerWidth( true ),
+                width : w > bw ? bw : w > 940 ? 940 : w,
                 height : this.$elWrapper.outerHeight( true )
             };
-
         },
         _layout : function() {
 
@@ -414,7 +415,6 @@
             var self = this;
 
             $window.on( 'debouncedresize.slitslider', function( event ) {
-
                 // update size values
                 self._getSize();
                 // set the sizes again
