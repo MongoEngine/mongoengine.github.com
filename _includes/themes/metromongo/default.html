@@ -55,6 +55,7 @@
           var $nav = $( '#nav-dots > a > span' ),
             slitslider = $( '#slider' ).slitslider( {
               autoplay: true,
+              interval: 8000,
               onBeforeChange : function( slide, pos ) {
                 $nav.removeClass( 'nav-dot-current' );
                 $nav.eq( pos ).addClass( 'nav-dot-current' );
