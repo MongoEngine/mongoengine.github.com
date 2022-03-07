@@ -1,7 +1,7 @@
 # This is the default format.
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title
-
+theme: metromongo
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
@@ -58,7 +58,7 @@ JB :
   BASE_PATH : false
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
-  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
+  # ex: [BASE_PATH]/assets/themes/[THEME_NAME]
   #
   # Override this by defining an absolute path to assets here.
   # ex:
